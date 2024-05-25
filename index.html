@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <div class="container">
         <h1>Password Generator</h1>
@@ -14,8 +16,54 @@
         <div class="displayCotainer">
             <!-- input container and copy button -->
             <input readonly placeholder="Password" class="display" data-password-display>
+
+            <button>
+                <span data-copyMsg></span>
+                <img src="assets/copy.png" alt="copy-icon">
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>password length</p>
+                <p data-length-no>10</p>
+            </div>
+
+            <!-- slider -->
+            <input type="range" min="1" max="20" step="1" name="" id="">
+
+            <!-- checkboxes -->
+            <div>
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">includes uppercase letters</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">includes lowercase letters</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">includes numbers</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">includes symbols</label>
+                </div>
+            </div>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <button class="generate-button">Generate Password</button>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
