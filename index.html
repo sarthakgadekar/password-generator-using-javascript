@@ -17,7 +17,7 @@
             <!-- input container and copy button -->
             <input readonly placeholder="Password" class="display" data-password-display>
 
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
                 <img src="assets/copy.png" alt="copy-icon">
             </button>
@@ -26,11 +26,11 @@
         <div class="input-container">
             <div class="length-container">
                 <p>password length</p>
-                <p data-length-no>10</p>
+                <p data-length-no></p>
             </div>
 
             <!-- slider -->
-            <input type="range" min="1" max="20" step="1" name="" id="">
+            <input type="range" min="1" max="20" step="1" dataLengthSlider>
 
             <!-- checkboxes -->
             <div>
@@ -60,7 +60,7 @@
                 <div data-indicator></div>
             </div>
 
-            <button class="generate-button">Generate Password</button>
+            <button class="generateBtn">Generate Password</button>
         </div>
     </div>
     <script src="script.js"></script>
